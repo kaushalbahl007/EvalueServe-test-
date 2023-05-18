@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="select_box">
+                <div class="box">
+                    <div class="region_select select_box_i">
+                        <select name="region" id="region" onchange="clickRegion(event)">
+                            <option value="">Select region</option>
+                        </select>
+                    </div>
+                    <div class="sub_region select_box_i">
+                        <select name="sub_region" id="sub_region" onchange="ClickSubRegion(event)">
+                            <option value="">sub Region</option>
+                        </select>
+                    </div>
+                    <div class="country_select select_box_i" onchange="ClickCountry(event)">
+                        <select name="country" id="country">
+                            <option value="">Country</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-conatiner">
+                <div class="table_section">
+                    <table id="table">
+                        <thead>
+
+                            <tr>
+                                <th>Region</th>
+                                <th>Sub Region</th>
+                                <th>Country Name</th>
+                                <th>Capital</th>
+                                <th>Population</th>
+                                <th>langauge</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
